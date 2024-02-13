@@ -38,8 +38,8 @@ Config.PedMenuGroup = "group.admin"
 
 Config.EnableJobOutfitsCommand = false -- Enables /joboutfits and /gangoutfits commands
 
-Config.ShowNearestShopOnly = false
-Config.HideRadar = false -- Hides the minimap while the appearance menu is open
+Config.ShowNearestShopOnly = true
+Config.HideRadar = true -- Hides the minimap while the appearance menu is open
 Config.NearestShopBlipUpdateDelay = 10000
 
 Config.InvincibleDuringCustomization = true
@@ -64,7 +64,7 @@ Config.GenderBasedOnPed = true
 
 Config.AlwaysKeepProps = false
 
-Config.PersistUniforms = false -- Keeps Job / Gang Outfits on player reconnects / logout
+Config.PersistUniforms = true -- Keeps Job / Gang Outfits on player reconnects / logout
 Config.OnDutyOnlyClothingRooms = false -- Set to `true` to make the clothing rooms accessible only to players who are On Duty
 
 Config.BossManagedOutfits = false -- Allows Job / Gang bosses to manage their own job / gang outfits
@@ -72,6 +72,11 @@ Config.BossManagedOutfits = false -- Allows Job / Gang bosses to manage their ow
 Config.ReloadSkinCooldown = 5000
 
 Config.AutomaticFade = false -- Enables automatic fading and hides the Fade section from Hair
+
+-- ACE Permissions Config
+Config.EnableACEPermissions = false
+Config.ACEResetCooldown = 5000
+Config.ACEListCooldown = 60 * 60 * 1000 -- 1 Hour
 
 Config.DisableComponents = {
     Masks = false,
@@ -93,9 +98,6 @@ Config.DisableProps = {
     Watches = false,
     Bracelets = false
 }
-
----@type string[]
-Config.Aces = {} -- list of ace permissions used for blacklisting
 
 Config.Blips = {
     ["clothing"] = {
